@@ -1,0 +1,74 @@
+body {
+  background-color: #1f2633;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.loginForm form {
+  width: 400px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+.loginForm form .name, .loginForm form .email {
+  position: relative;
+}
+.loginForm form .name input, .loginForm form .email input {
+  width: 300px;
+  font-size: 23px;
+  padding: 0.7rem 1rem;
+  color: #1f2633;
+  margin: 20px auto;
+  border: 1px solid #8c9fc4;
+}
+.loginForm form .name input:focus, .loginForm form .email input:focus {
+  outline: none;
+}
+.loginForm form .name label, .loginForm form .email label {
+  position: absolute;
+  top: 8px;
+  left: 20px;
+  background-color: white;
+  font-size: 19px;
+  color: #456194;
+}
+.loginForm form button {
+  width: 200px;
+  font-size: 24px;
+  background-color: #92a8cc;
+  border: none;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.1) inset;
+  border-radius: 10px;
+}
+.loginForm form button:hover {
+  -webkit-animation: color 0.5s forwards linear;
+          animation: color 0.5s forwards linear;
+}
+
+@-webkit-keyframes color {
+  from {
+    background-color: #92a8cc;
+  }
+  to {
+    background-color: #2f72df;
+  }
+}
+
+@keyframes color {
+  from {
+    background-color: #92a8cc;
+  }
+  to {
+    background-color: #2f72df;
+  }
+}/*# sourceMappingURL=style.css.map */
