@@ -66,3 +66,80 @@ body {
     background-color: #2f72df;
   }
 }
+
+//style for products
+
+.productContainer {
+  background-color: white;
+  padding: 0.4rem 0rem;
+  width: 100%;
+  // min-height: 100vh;
+  @include flexCenter(space-around, row);
+  align-items: flex-start;
+  margin: 0 auto;
+  .product {
+    @include flexCenter(center, column);
+    margin: 30px;
+    img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+    span {
+      font-size: 25px;
+      margin: 10px auto;
+    }
+    button {
+      width: 200px;
+      font-size: 24px;
+      background-color: #92a8cc;
+      border: none;
+      padding: 0.7rem 1rem;
+      cursor: pointer;
+      box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.1) inset;
+      border-radius: 10px;
+      &:hover {
+        animation: color 0.5s forwards linear;
+      }
+    }
+  }
+}
+.cartButton {
+  width: 200px;
+  font-size: 26px;
+  padding: 0.5rem 0.8rem;
+  background-color: white;
+  border: none;
+  margin: 10px;
+  float: right;
+}
+
+//style for cartItems
+
+.cartItems {
+  @include flexCenter(space-around, row);
+  background-color: white;
+  padding: 1rem 0;
+  margin: 20px auto;
+  img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+  }
+  span {
+    font-size: 25px;
+  }
+  button {
+    min-width: 90px;
+    font-size: 26px;
+    padding: 0.5rem 0.8rem;
+    border: none;
+    margin: 10px;
+    background-color: #1f2633;
+    color: white;
+    cursor: pointer;
+    &:last-child {
+      background-color: rgb(163, 53, 53);
+    }
+  }
+}
